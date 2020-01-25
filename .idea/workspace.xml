@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5f162e0e-0554-414d-a649-df5b4d5073e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskmate/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmate/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,10 +64,10 @@
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="194" y="30" width="812" height="730" key="#Intentions/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1578733720809" />
-    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579933378181">
+    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579938522001">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579933378181" />
+    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579938522001" />
     <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1577631443831" />
     <state x="351" y="217" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1578246795101">
       <screen x="0" y="0" width="1200" height="760" />
