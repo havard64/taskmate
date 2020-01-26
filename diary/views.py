@@ -17,10 +17,10 @@ def diary(request):
         messages.success(request, "Goal/Motto Added!")
         return redirect('diary')
     else:
-        all_diary = Diary.objects.filter(manage=request.user)
-        paginator = Paginator(all_diary, 1)
-        page = request.GET.get('pg')
-        all_tasks = paginator.get_page(page)
+#        all_diary = Diary.objects.filter(manage=request.user)
+#        paginator = Paginator(all_diary, 1)
+#        page = request.GET.get('pg')
+#        all_tasks = paginator.get_page(page)
 
-        return render(request, 'diary.html', {'all_diary': all_diary})
+        return render(request, 'diary.html') # {'all_diary': all_diary}
 
