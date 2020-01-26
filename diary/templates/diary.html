@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- Stylesheet -->
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+
+{% block title %}
+  <title> Welcome - MyDay</title>
+{% endblock title %}
+
+{% block content %}
+<!-- <img src="{% static 'images/sky2.png' %}" alt="test" class="img-responsive" width="1200" height="auto"> -->
+
+<div class="container">
+        <div class="row mt-2">
+            <div class="col-lg-4">
+                <img src="{% static 'images/goal.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
+            </div>
+             <div class="col-lg-4">
+                 <img src="{% static 'images/indicator.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
+            </div>
+             <div class="col-lg-4">
+                 <img src="{% static 'images/notes2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
+            </div>
+        </div>
+        <form method="POST">
+        {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Goals/Motto for today</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" name="goal" rows="10" ></textarea>
+                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                          <label for="exampleFormControlSelect1">Feel good</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Fantastic</option>
+                              <option>Good</option>
+                              <option>Could be better</option>
+                          </select>
+                         <label for="exampleFormControlSelect1">Productivity</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Fantastic</option>
+                              <option>Good</option>
+                              <option>Could be better</option>
+                          </select>
+                         <label for="exampleFormControlSelect1">Me time</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Fantastic</option>
+                              <option>Good</option>
+                              <option>Could be better</option>
+                          </select>
+                         <label for="exampleFormControlSelect1">Friends/Family time</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Fantastic</option>
+                              <option>Good</option>
+                              <option>Could be better</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea2">Diary Notes from Today</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea2" name="notes" rows="10" ></textarea>
+                        </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add MyDay</button>
+        </form>
+</div>
+
+
+
+
+
+{% endblock content %}

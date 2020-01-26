@@ -9,4 +9,5 @@ urlpatterns = [
     path('contact', todolist_view.contact, name='contact'),
     path('about-us', todolist_view.about, name='about'),
     path('account/', include('users_app.urls')),
+    path('diary/', include('diary.urls')),
 ]

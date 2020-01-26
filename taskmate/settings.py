@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'todolist_app',
     'users_app',
     'crispy_forms',
+    'diary',
 
 ]
 
@@ -51,7 +52,7 @@ ROOT_URLCONF = 'taskmate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [(os.path.join(BASE_DIR, 'templates')),],
+        'DIRS': [(os.path.join(BASE_DIR, 'templates')), (os.path.join(BASE_DIR, 'diary/templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

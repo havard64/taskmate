@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f162e0e-0554-414d-a649-df5b4d5073e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmate/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmate/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmate/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmate/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist_app/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -29,10 +33,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PyShop" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -64,23 +69,32 @@
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="194" y="30" width="812" height="730" key="#Intentions/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1578733720809" />
-    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579938961868">
+    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580025800086">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579938961868" />
+    <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1580025800086" />
     <state x="360" y="177" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1577631443831" />
     <state x="351" y="217" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1578246795101">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="351" y="217" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1578246795101" />
-    <state x="382" y="136" key="FileChooserDialogImpl" timestamp="1577699823514">
+    <state x="382" y="136" key="FileChooserDialogImpl" timestamp="1579952077271">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
+    <state x="382" y="136" key="FileChooserDialogImpl/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579952077271" />
     <state x="382" y="136" key="FileChooserDialogImpl/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1577699823514" />
-    <state x="94" y="94" width="1013" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579333927097">
+    <state x="344" y="103" key="RollbackChangesDialog" timestamp="1579965498513">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
-    <state x="94" y="94" width="1013" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579333927097" />
+    <state x="344" y="103" key="RollbackChangesDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579965498513" />
+    <state x="438" y="297" key="VCS.ChangelistChooser" timestamp="1579975055044">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="438" y="297" key="VCS.ChangelistChooser/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579975055044" />
+    <state x="94" y="94" width="1013" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579974896783">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="94" y="94" width="1013" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579974896783" />
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1579934562216">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
