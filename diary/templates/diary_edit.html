@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
 
 {% block title %}
-  <title> Welcome - MyDay</title>
+<title>This is MyDay</title>
 {% endblock title %}
 
 {% block content %}
@@ -19,7 +19,8 @@
                     <img src="{% static 'images/goal.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Goals/Motto for today</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" name="goal" rows="10" ></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="goal" rows="10"> {{ day.goal }} </textarea>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -56,7 +57,7 @@
                          <img src="{% static 'images/notes2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea2">Diary Notes from Today</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea2" name="notes" rows="10" ></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea2" name="notes" rows="10"> {{ day.notes }} </textarea>
                         </div>
                 </div>
             </div>
@@ -77,6 +78,4 @@
          </div>
         </form>
 </div>
-
-
 {% endblock content %}
