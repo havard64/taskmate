@@ -66,9 +66,9 @@ def log(request):
 
 @login_required
 def diary_delete(request, pk):
-    task = Tasklist.objects.get(pk=task_id)
-    if task.manage == request.user:
-        task.delete()
+    diary = Diary.objects.get(pk)
+    if diary.manage == request.user:
+        diary.delete()
     else:
         messages.error(request, "Access restricted, you are not allowed")
     return redirect('todolist')

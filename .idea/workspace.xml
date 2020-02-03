@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f162e0e-0554-414d-a649-df5b4d5073e7" name="Default Changelist" comment="" />
+    <list default="true" id="5f162e0e-0554-414d-a649-df5b4d5073e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/diary.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/diary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/diary_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/diary_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,12 +98,12 @@
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="94" y="94" width="1013" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579974896783" />
-    <state x="300" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1580276516531">
+    <state x="300" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1580708632771">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579934562216" />
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1579551063240" />
-    <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1580276516531" />
+    <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1580708632771" />
     <state x="261" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1577874121555">
       <screen x="0" y="0" width="1200" height="760" />
     </state>

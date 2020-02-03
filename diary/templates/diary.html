@@ -19,7 +19,7 @@
                     <img src="{% static 'images/goal.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Goals/Motto for today</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" name="goal" rows="10" ></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="goal" rows="10" > {{ day.goal }} </textarea>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -56,7 +56,7 @@
                          <img src="{% static 'images/notes2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea2">Diary Notes from Today</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea2" name="notes" rows="10" ></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea2" name="notes" rows="10"> {{ day.diary }}</textarea>
                         </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <div class="col-lg-4">
                 <div class="form-group">
                     <div class='input-group date' id='datetimepicker1'>
-                      <input type='text' class="form-control" name="date" placeholder="Enter date"/>
+                      <input type='text' class="form-control" name="date" value="date"/>
                       <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                       </span>

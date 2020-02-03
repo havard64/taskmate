@@ -5,35 +5,32 @@
 {% endblock title %}
 
 {% block content %}
-<div class="container">
-    </br>
-
-    <table class="table table-bordered text-center">
-       <thead class="thead-dark">
-            <tr class="row">
-                <th class="col-7">Goal</th>
-                <th class="col-7">Notes</th>
-                <th class="col-1">Edit</th>
-                <th class="col-1">Delete</th>
-            </tr>
-       </thead>
-       <tbody>
-       {% if all_diary %}
-            {% for obj in all_diary %}
-                <tr class= "table-success row">
-                <td class="col-7"><del>{{ obj.goal }}</del></td>
-                <td class="col-7"><del>{{ obj.notes }}</del></td>
-                <td class="col-1"><a href="{% url 'diary_edit' obj.pk %}"><button type="button" class="btn btn-warning">Edit</button></a></td>
-                <td class="col-1"><a href="{% url 'diary_delete' obj.pk %}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+    <div class="container">
+        </br>
+        <table class="table table-hover">
+           <thead class="thead-dark">
+                <tr class="row">
+                    <th class="col-2">MyDate</th>
+                    <th class="col-4">Goal</th>
+                    <th class="col-4">Notes</th>
+                    <th class="col-1">Edit</th>
+                    <th class="col-1">Delete</th>
                 </tr>
+           </thead>
+           <tbody>
+           {% if all_diary %}
+                {% for obj in all_diary %}
+                    <tr class= "row">
+                    <td class="col-2"> {{ obj.date }} </td>
+                    <td class="col-4"> {{ obj.goal }} </td>
+                    <td class="col-4"> {{ obj.notes }} </td>
+                    <td class="col-1"><a href="{% url 'diary_edit' obj.pk %}"><button type="button" class="btn btn-warning">Edit</button></a></td>
+                    <td class="col-1"><a href="{% url 'diary_delete' obj.pk %}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+                    </tr>
+                {% endfor %}
+           {% endif %}
+            </tbody>
+        </table>
+    </div>
 
-            {% endfor %}
-       {% endif %}
-        </tbody>
-    </table>
-    </body>
-    </html>
-
-</div>
-
-{% endblock content %}
+    {% endblock content %}
