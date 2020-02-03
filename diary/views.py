@@ -20,17 +20,18 @@ def diary(request):
         return redirect('diary')
     else:
         if Diary.objects.filter(date=datetime.date.today()).exists():
-            template = 'diary.html'
-            day = Diary.objects.get(date=datetime.date.today())
-            daypk = day.pk
-            form = DiaryForm(instance=day)
-            context = {
-                'form': form,
-                'day': day,
-            }
-            return render(request, template, context)
+#            template = 'diary.html'
+#            day = Diary.objects.get(date=datetime.date.today())
+#            daypk = day.pk
+#            form = DiaryForm(instance=day)
+#           context = {
+#                'form': form,
+#                'day': day,
+#            }
+#            return render(request, template, context)
 #            return render(request, 'diary_edit.html')
 #            return redirect('diary_edit', daypk)
+            return render(request, 'diary.html')
         else:
             return render(request, 'diary.html')
 
