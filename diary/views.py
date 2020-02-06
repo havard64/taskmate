@@ -17,7 +17,7 @@ def diary(request):
             instance.manage = request.user
             instance.save()
         messages.success(request, "MyDay Added!")
-        return redirect('diary')
+        return redirect('log')
     else:
         if Diary.objects.filter(date=datetime.date.today()).exists():
 #            template = 'diary.html'
@@ -53,23 +53,24 @@ def diary_edit(request, pk):
         form = DiaryForm(instance=day)
 
     context = {
-       'form': form,
+      'form': form,
        'day': day,
     }
 
     return render(request, template, context)
 
+
 @login_required
 def log(request):
-    all_diary = Diary.objects.filter(manage=request.user)
+    all_diary = Diary.objects.filter(manage=request.user).order_by('-date')
     return render(request, 'log.html', {'all_diary': all_diary})
 
 
 @login_required
 def diary_delete(request, pk):
-    diary = Diary.objects.get(pk)
+    diary = Diary.objects.get(pk=pk)
     if diary.manage == request.user:
         diary.delete()
     else:
         messages.error(request, "Access restricted, you are not allowed")
-    return redirect('todolist')
+    return redirect('log')

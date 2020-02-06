@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5f162e0e-0554-414d-a649-df5b4d5073e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist_app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/diary.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/diary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/diary_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/diary_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmate/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmate/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +94,10 @@
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="344" y="103" key="RollbackChangesDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579965498513" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1580965624685">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1580965624685" />
     <state x="438" y="297" key="VCS.ChangelistChooser" timestamp="1579975055044">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
@@ -100,9 +112,11 @@
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1580844320121" />
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1580747344239" />
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1580708632771" />
-    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1577874121555">
+    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1580972441215">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
+    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1580931124128" />
     <state x="261" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1577874121555" />
+    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760@0.0.1200.760" timestamp="1580972441215" />
   </component>
 </project>

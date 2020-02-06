@@ -26,29 +26,33 @@
                 <div class="col-lg-4">
                     <img src="{% static 'images/indicator.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
                     <div class="form-group">
-                          <label for="exampleFormControlSelect1">Feel good</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                              <option>Fantastic</option>
-                              <option>Good</option>
-                              <option>Could be better</option>
-                          </select>
+                        <label for="exampleFormControlSelect1">Feel good</label>
+                        <select class="form-control" id="exampleFormControlSelect1" name="feelgood" value="feelgood">
+                              <option value="{{ day.feelgood}}" > {{ day.feelgood }}</option>
+                              <option value="Fantastic">Fantastic</option>
+                              <option value="Good">Good</option>
+                              <option value="Could be better">Could be better</option>
+                        </select>
                          <label for="exampleFormControlSelect1">Productivity</label>
-                          <select class="form-control" id="exampleFormControlSelect2">
-                              <option>Fantastic</option>
-                              <option>Good</option>
-                              <option>Could be better</option>
+                          <select class="form-control" id="exampleFormControlSelect2" name="productivity" value="productivity">
+                              <option value="{{ day.productivity}}" > {{ day.productivity }}</option>
+                              <option value="Fantastic">Fantastic</option>
+                              <option value="Good">Good</option>
+                              <option value="Could be better">Could be better</option>
                           </select>
                          <label for="exampleFormControlSelect1">Me time</label>
-                          <select class="form-control" id="exampleFormControlSelect3">
-                              <option>Fantastic</option>
-                              <option>Good</option>
-                              <option>Could be better</option>
+                          <select class="form-control" id="exampleFormControlSelect3" name="metime" value="metime">
+                              <option value="{{ day.metime}}"> {{ day.metime }}</option>
+                              <option value="Fantastic">Fantastic</option>
+                              <option value="Good">Good</option>
+                              <option value="Could be better">Could be better</option>
                           </select>
                          <label for="exampleFormControlSelect1">Friends/Family time</label>
-                          <select class="form-control" id="exampleFormControlSelect4">
-                              <option>Fantastic</option>
-                              <option>Good</option>
-                              <option>Could be better</option>
+                          <select class="form-control" id="exampleFormControlSelect4" name="fftime" value="fftime">
+                              <option value="{{ day.fftime }}"> {{ day.fftime }}</option>
+                              <option value="Fantastic">Fantastic</option>
+                              <option value="Good">Good</option>
+                              <option value="Could be better" >Could be better</option>
                           </select>
                     </div>
 
@@ -73,7 +77,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <button type="submit" class="btn btn-primary">Add MyDay</button>
+                <button type="submit" class="btn btn-primary">Save MyDay</button>
             </div>
          </div>
         </form>
