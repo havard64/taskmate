@@ -35,7 +35,7 @@
             <a class="nav-item nav-link" href="{% url 'about' %}">About Us</a>
             </div>
         </div>
-        {% if user.is_authenticated %}
+<!--        {% if user.is_authenticated %}
              <div class="form-inline my-2 my-lg-0">
                 <div class="p-2 bg-dark text-white">Logged in as {{ user.username }}</div>
                 <a href="{% url 'logout' %}">
