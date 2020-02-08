@@ -76,7 +76,7 @@ def index(request):
 @login_required
 def contact(request):
     context = {
-        'contact_text': "Welcome Contact Page - contact by mail hhel@online.no"
+        'contact_text': "Contact us by mail: hhel@online.no"
         }
     return render(request, 'contact.html', context)
 
