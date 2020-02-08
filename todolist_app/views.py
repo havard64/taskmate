@@ -76,12 +76,12 @@ def index(request):
 @login_required
 def contact(request):
     context = {
-        'contact_text': "Welcome Contact Page"
+        'contact_text': "Welcome Contact Page - contact by mail hhel@online.no"
         }
     return render(request, 'contact.html', context)
 
 def about(request):
     context = {
-        'about_text': "Welcome About Page"
+        'about_text': "Developed by Heads-Up Software"
         }
     return render(request, 'about.html', context)
