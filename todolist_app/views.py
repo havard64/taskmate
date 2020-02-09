@@ -82,6 +82,6 @@ def contact(request):
 
 def about(request):
     context = {
-        'about_text': "Developed by Heads-Up Software"
+        'about_text': 'Developed by "Heads-Up Software"'
         }
     return render(request, 'about.html', context)
