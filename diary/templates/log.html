@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
+
+<!-- Stylesheet -->
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
 
 {% block title %}
 <title> My History - MyDay</title>
 {% endblock title %}
 
 {% block content %}
-    <div class="container">
+<!--    <div class="container">
         </br>
-        <table class="table table-hover">
+       <table class="table table-hover">
            <thead class="thead-dark">
                 <tr class="row">
                     <th class="col-2">MyDate</th>
@@ -32,6 +36,66 @@
            {% endif %}
             </tbody>
         </table>
+    </div> -->
+
+{% for obj in all_diary %}
+    <div class="container">
+         <div class="row mt-2">
+                <div class="col-lg-4">
+                    <img src="{% static 'images/morning.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
+                    <div style="height: 215px; background-color: rgba(255,0,0,0.1);">
+                        <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
+                            <label class="lead">MyGoal</label>
+                            <div>
+                                <textarea readonly rows="6" cols="43">{{obj.goal}} </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="{% static 'images/sky2.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
+                    <div class="shadow p-3 mb-5 bg-white rounded mt-2">
+                        <label class="lead">MyMeasures</label>
+                        <dl class="row">
+                            <dt class="col-sm-6">FeelGood</dt>
+                            <dd class="col-sm-6"> {{ obj.feelgood }} </dd>
+                            <dt class="col-sm-6">Productivity</dt>
+                            <dd class="col-sm-6"> {{ obj.productivity }} </dd>
+                            <dt class="col-sm-6">MeTime</dt>
+                            <dd class="col-sm-6"> {{ obj.metime }} </dd>
+                            <dt class="col-sm-6">Friends/FamilyTime</dt>
+                            <dd class="col-sm-6"> {{ obj.fftime }} </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="{% static 'images/midday.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
+                    <div style="height: 215px; background-color: rgba(255,0,0,0.1);">
+                        <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
+                            <label class="lead">MyDiary</label>
+                            <div class="p-3 mb-2 bg-light text-dark h-75">{{obj.notes}}</div>
+                        </div>
+                    </div>
+                </div>
+         </div>
+         <div class="row">
+                <div class="col-lg-4">
+                    <div style="height: 75px; background-color: rgba(255,0,0,0.1);">
+                         <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
+                             <dl class="row">
+                                 <dt class="lead col-sm-6">Myday</dt>
+                                 <dd class="col-sm-6"> {{ obj.date }} </dd>
+                             </dl>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <td class="col-1"><a href="{% url 'diary_edit' obj.pk %}"><button type="button" class="btn btn-outline-warning btn-block">Edit MyDay</button></a></td>
+                    <td class="col-1"><a href="{% url 'diary_delete' obj.pk %}"><button type="button" class="btn btn-outline-danger btn-block">Delete Myday</button></a></td>
+                </div>
+         </div>
     </div>
+
+{% endfor %}
 
     {% endblock content %}
