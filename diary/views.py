@@ -18,8 +18,8 @@ def diary(request):
             instance.save()
         messages.success(request, "MyDay Added!")
         return redirect('log')
-    else:
-        if Diary.objects.filter(date=datetime.date.today()).exists():
+#    else:
+#        if Diary.objects.filter(date=datetime.date.today()).exists():
 #            template = 'diary.html'
 #            day = Diary.objects.get(date=datetime.date.today())
 #            daypk = day.pk
@@ -31,9 +31,9 @@ def diary(request):
 #            return render(request, template, context)
 #            return render(request, 'diary_edit.html')
 #            return redirect('diary_edit', daypk)
-            return render(request, 'diary.html')
-        else:
-            return render(request, 'diary.html')
+#            return render(request, 'diary.html')
+    else:
+        return render(request, 'diary.html')
 
 @login_required
 def diary_edit(request, pk):

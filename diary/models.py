@@ -12,6 +12,7 @@ class Diary(models.Model):
     productivity = models.CharField(null=True, max_length=30, default="Fantastic")
     metime = models.CharField(null=True, max_length=30, default="Fantastic")
     fftime = models.CharField(null=True, max_length=30, default="Fantastic")
+#    image = models.ImageField()
 
 #    def __str__(self):
 #       return self.task + " - " + str(self.done)
