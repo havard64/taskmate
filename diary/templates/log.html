@@ -42,18 +42,18 @@
     <div class="container">
          <div class="row mt-2">
                 <div class="col-lg-4">
-                    <img src="{% static 'images/morning.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
+                    <img src="{% static 'images/midday2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
                     <div style="height: 215px; background-color: rgba(255,0,0,0.1);">
                         <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
                             <label class="lead">MyGoal</label>
                             <div>
-                                <textarea readonly rows="6" cols="43">{{obj.goal}} </textarea>
+                                <textarea readonly rows="6" cols="43">{{obj.goal}}</textarea>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="{% static 'images/sky2.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
+                    <img src="{% static 'images/morning2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
                     <div class="shadow p-3 mb-5 bg-white rounded mt-2">
                         <label class="lead">MyMeasures</label>
                         <dl class="row">
@@ -69,11 +69,13 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="{% static 'images/midday.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
+                    <img src="{% static 'images/evening2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="20">
                     <div style="height: 215px; background-color: rgba(255,0,0,0.1);">
                         <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
                             <label class="lead">MyDiary</label>
-                            <div class="p-3 mb-2 bg-light text-dark h-75">{{obj.notes}}</div>
+                             <div>
+                                <textarea readonly rows="6" cols="43">{{obj.notes}}</textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
