@@ -12,10 +12,11 @@ class Diary(models.Model):
     productivity = models.CharField(null=True, max_length=30, default="Fantastic")
     metime = models.CharField(null=True, max_length=30, default="Fantastic")
     fftime = models.CharField(null=True, max_length=30, default="Fantastic")
+#    image = models.ImageField()
     class Meta:
         unique_together = (("manage", "date"),)
 
-#    image = models.ImageField()
+
 
 
 

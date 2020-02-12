@@ -5,10 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diary/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/diary/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diary/templates/diary.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/diary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diary/templates/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist_app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist_app/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
