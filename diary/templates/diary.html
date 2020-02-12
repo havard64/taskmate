@@ -11,6 +11,19 @@
 {% block content %}
 <!-- <img src="{% static 'images/sky2.png' %}" alt="test" class="img-responsive" width="1200" height="auto"> -->
 
+{% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                {{ message }}
+                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+            </div>
+
+        {% endfor %}
+    {% endif %}
+
+
 <div class="container">
         <form method="POST">
         {% csrf_token %}
@@ -77,6 +90,5 @@
          </div>
         </form>
 </div>
-
 
 {% endblock content %}

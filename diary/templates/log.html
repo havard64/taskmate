@@ -38,11 +38,44 @@
         </table>
     </div> -->
 
+{% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                {{ message }}
+                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+            </div>
+
+        {% endfor %}
+    {% endif %}
+
 {% for obj in all_diary %}
     <div class="container">
-         <div class="row mt-2">
-                <div class="col-lg-4">
+          <div class="row">
+                <div class="col-lg-4 mt-2">
                     <img src="{% static 'images/midday2.JPG' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="40">
+                    <div style="height: 75px; background-color: rgba(255,0,0,0.1);">
+                         <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
+                             <dl class="row">
+                                 <dt class="lead col-sm-6">Myday</dt>
+                                 <dd class="col-sm-6"> {{ obj.date }} </dd>
+                             </dl>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <img src="{% static 'images/morning2.JPG' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="40">
+                    <td class="col-1"><a href="{% url 'diary_edit' obj.pk %}"><button type="button" class="btn btn-outline-warning btn-block">Edit MyDay</button></a></td>
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <img src="{% static 'images/evening2.JPG' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="40">
+                    <td class="col-1"><a href="{% url 'diary_delete' obj.pk %}"><button type="button" class="btn btn-outline-danger btn-block">Delete Myday</button></a></td>
+                </div>
+          </div>
+
+        <div class="row mt-2">
+                <div class="col-lg-4">
                     <div style="height: 215px; background-color: rgba(255,0,0,0.1);">
                         <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
                             <label class="lead">MyGoal</label>
@@ -53,7 +86,6 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="{% static 'images/morning2.JPG' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="40">
                     <div class="shadow p-3 mb-5 bg-white rounded mt-2">
                         <label class="lead">MyMeasures</label>
                         <dl class="row">
@@ -69,7 +101,6 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="{% static 'images/evening2.JPG' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="40">
                     <div style="height: 215px; background-color: rgba(255,0,0,0.1);">
                         <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
                             <label class="lead">MyDiary</label>
@@ -78,22 +109,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-         </div>
-         <div class="row">
-                <div class="col-lg-4">
-                    <div style="height: 75px; background-color: rgba(255,0,0,0.1);">
-                         <div class="shadow p-3 mb-5 bg-white rounded mt-2 h-100">
-                             <dl class="row">
-                                 <dt class="lead col-sm-6">Myday</dt>
-                                 <dd class="col-sm-6"> {{ obj.date }} </dd>
-                             </dl>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-2">
-                    <td class="col-1"><a href="{% url 'diary_edit' obj.pk %}"><button type="button" class="btn btn-outline-warning btn-block">Edit MyDay</button></a></td>
-                    <td class="col-1"><a href="{% url 'diary_delete' obj.pk %}"><button type="button" class="btn btn-outline-danger btn-block">Delete Myday</button></a></td>
                 </div>
          </div>
     </div>
