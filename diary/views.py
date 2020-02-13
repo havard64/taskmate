@@ -12,21 +12,21 @@ import datetime
 def diary(request):
     if request.method == "POST":
         form = DiaryForm(request.POST or None)
-        try:
-            if form.is_valid():
-                form.save()
-                messages.success(request, "Your MyDay is updated")
+#        try:
+#            if form.is_valid():
+#                form.save()
+#                messages.success(request, "Your MyDay is updated")
 
-        except Exception as e:
-            messages.warning(request, 'Your update was not saved due to an error: {}'.format(e))
+ #       except Exception as e:
+ #           messages.warning(request, 'Your update was not saved due to an error: {}'.format(e))
 
-#        if form.is_valid():
-#            instance = form.save(commit=False)
-#            instance.manage = request.user
-#            instance.save()
-#            messages.success(request, "MyDay Added!")
-#        else:
-#            messages.warning(request, 'Not saved - wrong date format or duplicate date')
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.manage = request.user
+            instance.save()
+            messages.success(request, "MyDay Added!")
+        else:
+            messages.warning(request, 'Not saved - wrong date format or duplicate date')
         return redirect('log')
     else:
         return render(request, 'diary.html')
