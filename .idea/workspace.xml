@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5f162e0e-0554-414d-a649-df5b4d5073e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/diary.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/diary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/templates/diary_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/diary/templates/diary_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diary/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmate/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmate/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskmate/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/taskmate/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,17 +106,27 @@
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="94" y="94" width="1013" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1579974896783" />
-    <state x="300" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1581315477456">
+    <state x="300" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1582732170845">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1580844320121" />
     <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1581049980961" />
-    <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1581315477456" />
-    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1581176331377">
+    <state x="300" y="204" key="com.intellij.ide.util.TipDialog/0.0.1200.760@0.0.1200.760" timestamp="1582732170845" />
+    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1582360712090">
       <screen x="0" y="0" width="1200" height="760" />
     </state>
     <state x="261" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760/3000.0.1680.1010@0.0.1200.760" timestamp="1580931124128" />
     <state x="261" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760/3000.0.1680.969@0.0.1200.760" timestamp="1581176331377" />
-    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760@0.0.1200.760" timestamp="1580972441215" />
+    <state x="261" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1200.760@0.0.1200.760" timestamp="1582360712090" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/diary/views.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

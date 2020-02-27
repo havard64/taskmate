@@ -8,10 +8,11 @@ from django.contrib.auth.decorators import login_required
 import datetime
 
 
+
 @ login_required
 def diary(request):
     if request.method == "POST":
-        form = DiaryForm(request.POST or None)
+        form = DiaryForm(request.POST or None, request.FILES or None)
 #        try:
 #            if form.is_valid():
 #                form.save()
@@ -36,7 +37,7 @@ def diary_edit(request, pk):
     template = 'diary_edit.html'
     day = get_object_or_404(Diary, pk=pk)
     if request.method == "POST":
-        form = DiaryForm(request.POST, instance=day)
+        form = DiaryForm(request.POST or None, request.FILES or None, instance=day)
         try:
             if form.is_valid():
                 form.save()

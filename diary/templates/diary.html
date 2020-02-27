@@ -25,7 +25,7 @@
 
 
 <div class="container">
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
             <div class="row mt-2">
                 <div class="col-lg-4">
@@ -84,6 +84,14 @@
                     </div>
                 </div>
             </div>
+             <!-- image upload -->
+           <div class="col-lg-4">
+             <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile" name="image">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+           </div>
+            <!-- image upload end -->
             <div class="col-lg-4">
                 <button type="submit" class="btn btn-primary">Save MyDay</button>
             </div>
@@ -92,3 +100,4 @@
 </div>
 
 {% endblock content %}
+

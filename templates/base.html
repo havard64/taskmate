@@ -15,6 +15,7 @@
      <!-- datepicker end -->
     <link rel="icon" href="{% static 'images/logo3.png' %}" type="image/gif" sizes="16/16">
 
+
     {% block title %}
     {% endblock title %}
 
@@ -80,6 +81,14 @@
             });
         </script>
         <!-- datapicker end -->
-
+        <!-- image upload -->
+        <script>
+        // Add the following code if you want the name of the file appear on select -->
+            $(".custom-file-input").on("change", function() {
+              var fileName = $(this).val().split("\\").pop();
+              $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+        </script>
+        <!-- image upload end -->
 </body>
 </html>

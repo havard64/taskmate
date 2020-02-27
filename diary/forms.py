@@ -5,4 +5,4 @@ from diary.models import Diary
 class DiaryForm(forms.ModelForm):
     class Meta:
         model = Diary
-        fields = ['goal', 'feelgood', 'productivity', 'metime', 'fftime', 'notes', 'date',]
+        fields = ['goal', 'feelgood', 'productivity', 'metime', 'fftime', 'notes', 'date', 'image',]

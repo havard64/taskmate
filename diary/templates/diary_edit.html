@@ -24,8 +24,8 @@
     {% endif %}
 
 <div class="container">
-        <form method="POST">
-        {% csrf_token %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
             <div class="row mt-2">
                 <div class="col-lg-4">
                     <img src="{% static 'images/goal.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
@@ -67,7 +67,6 @@
                               <option value="Could be better" >Could be better</option>
                           </select>
                     </div>
-
                 </div>
                 <div class="col-lg-4">
                          <img src="{% static 'images/notes2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
@@ -77,21 +76,41 @@
                         </div>
                 </div>
             </div>
-         <div class="row mt-2">
-            <div class="col-lg-4">
-                <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                      <input type='text' class="form-control" name="date" placeholder="Enter date" value="{{ day.date }}"/>
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                      </span>
+             <div class="row mt-2">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                          <input type='text' class="form-control" name="date" placeholder="Enter date" value="{{ day.date }}"/>
+                          <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <button type="submit" class="btn btn-primary">Save MyDay</button>
-            </div>
-         </div>
+    <!-- image upload -->
+               <div class="col-lg-4">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile" name="image">
+                  <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+               </div>
+
+    <!-- image upload end -->
+               <div class="col-lg-4">
+                        <button type="submit" class="btn btn-primary">Save MyDay</button>
+               </div>
+             </div>
         </form>
+
+        <div class="row mt-2 justify-content-center">
+           <div class="col-lg-4">
+
+            {% if  day.image %}
+              <label>MyPicture for today</label>
+              <img src="{{ day.image.url }}" class="rounded-lg shadow-sm" width="360" height="auto">
+            {% endif %}
+           </div>
+        </div>
 </div>
+
 {% endblock content %}

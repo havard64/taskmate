@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from todolist_app import views as todolist_view
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -10,4 +12,5 @@ urlpatterns = [
     path('about-us', todolist_view.about, name='about'),
     path('account/', include('users_app.urls')),
     path('diary/', include('diary.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
